@@ -1,12 +1,16 @@
-# Ex1: A box contains three marbles — one red, one green, and one blue. Consider an experiment that consists of taking one marble from the box, then replacing it in the box and drawing a second marble from the box. Describe the sample space.
+# Ex1: A box contains three marbles — one red, one green, and one blue. Consider an experiment that consists of taking one marble from the box, then replacing it in the box and drawing a second marble from the box. Describe the sample space. Repeat for the case in which the second marble is drawn without first replacing the first marble.
 ## Dịch sang tiếng Việt
-Một hộp chứa ba viên bi — một viên đỏ, một viên xanh lá cây và một viên xanh dương. Xem xét một thí nghiệm bao gồm việc lấy một viên bi từ hộp, sau đó đặt nó trở lại hộp và rút viên bi thứ hai từ hộp. Mô tả không gian mẫu.
+Một hộp chứa ba viên bi — một viên đỏ, một viên xanh lá cây và một viên xanh dương. Xem xét một thí nghiệm bao gồm việc lấy một viên bi từ hộp, sau đó đặt nó trở lại hộp và rút viên bi thứ hai từ hộp. Mô tả không gian mẫu. Lặp lại cho trường hợp rút viên bi thứ hai mà không đặt viên bi đầu tiên trở lại hộp.
 ## Giải
 - Lần đầu tiên, ta có thể rút một trong ba viên bi: Đỏ (R), Xanh lá cây (G), hoặc Xanh dương (B). Là tổ hợp {R, G, B} = 3.
 - Sau khi rút viên bi đầu tiên, ta đặt nó trở lại hộp. Do đó, lần thứ hai ta vẫn có thể rút một trong ba viên bi. Là tổ hợp {R, G, B} = 3.
 - Tổng = tích của số kết quả của lần rút đầu tiên và số kết quả của lần rút thứ hai: 3 * 3 = 9.
 - Không gian mẫu (S) bao gồm tất cả các tổ hợp có thể xảy ra khi rút hai viên bi:
   S = { (R, R), (R, G), (R, B), (G, R), (G, G), (G, B), (B, R), (B, G), (B, B) }
+- Nếu sau khi rút viên bi đầu tiên, ta không đặt nó trở lại hộp, thì lần thứ hai ta chỉ có thể rút một trong hai viên bi còn lại.
+- Tổng = tích của số kết quả của lần rút đầu tiên và số kết quả của lần rút thứ hai: 3 * 2 = 6.
+- Không gian mẫu (S) bao gồm tất cả các tổ hợp có thể xảy ra khi rút hai viên bi mà không đặt viên bi đầu tiên trở lại hộp:
+  S = { (R, G), (R, B), (G, R), (G, B), (B, R), (B, G) }
 
 # Ex2: An experiment consists of tossing a coin three times. What is the sample space of this experiment? Which event corresponds to the experiment resulting in more heads than tails?
 ## Dịch sang tiếng Việt
@@ -74,4 +78,17 @@ Gọi E, F, G là ba sự kiện. Tìm các biểu thức cho các sự kiện s
 - (i) Đúng hai trong số chúng xảy ra: (E ∩ F ∩ G^c) ∪ (E ∩ F^c ∩ G) ∪ (E^c ∩ F ∩ G)
 - (j) Nhiều nhất ba trong số chúng xảy ra: Luôn đúng với mọi trường hợp vì có ba sự kiện.
 
-# Ex7: 
+# Ex7: Find simple expressions for the events (a) E ∪ E c ; (b) EE c ; (c) ( E ∪ F )( E ∪ F c ); (d) ( E ∪ F )( E c ∪ F )( E ∪ F c ); (e) ( E ∪ F )( F ∪ G ).
+## Dịch sang tiếng Việt
+Tìm các biểu thức đơn giản cho các sự kiện sau: (a) E ∪ E^c; (b) E E^c; (c) (E ∪ F)(E ∪ F^c); (d) (E ∪ F)(E^c ∪ F)(E ∪ F^c); (e) (E ∪ F)(F ∪ G).
+## Giải
+- (a) E ∪ E^c = Ω (tập không gian mẫu)
+- (b) E E^c = ∅ (tập rỗng)
+- (c) (E ∪ F)(E ∪ F^c) = E ∪ F
+- (d) (E ∪ F)(E^c ∪ F)(E ∪ F^c) = (E ∪ F)(E ∪ F^c) = E ∪ F
+- (e) (E ∪ F)(F ∪ G) = (E ∪ F ∪ G)
+
+# Ex8: Use Venn diagrams (or any other method) to show that  (a) EF ⊂ E, E ⊂ E ∪ F;  (b) if E ⊂ F then Fc ⊂ Ec;  (c) the commutative laws are valid;  (d) the associative laws are valid;  (e) F = FE ∪ FEc;  (f ) E ∪ F = E ∪ EcF;  (g) DeMorgan’s laws are valid.
+## Dịch sang tiếng Việt
+Sử dụng sơ đồ Venn (hoặc bất kỳ phương pháp nào khác) để chứng minh rằng (a) EF ⊂ E, E ⊂ E ∪ F; (b) nếu E ⊂ F thì Fc ⊂ Ec; (c) các luật giao hoán là đúng; (d) các luật kết hợp là đúng; (e) F = FE ∪ FEc; (f) E ∪ F = E ∪ EcF; (g) các luật DeMorgan là đúng.
+## Giải
